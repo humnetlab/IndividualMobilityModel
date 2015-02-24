@@ -1,5 +1,5 @@
 #ReadMe
-This document explains **how to run** the individual spatial temporal mobility model. The entire process is divided into 13 steps. They are names and introduced by the order they should be run. For each step, the **function**ality, input and **output file**s, and **how to run** the code are introduced. We provide two sample **input file**s, *ExtractedStays.txt* and *SampleStayRegion.txt*, so that anyone interested in the model can go through all the steps with the sample data. The code is written in c++ and Matlab. 
+This document explains how to run the individual spatial temporal mobility model. The entire process is divided into 13 steps. They are names and introduced by the order they should be run. For each step, the functionality, input and output files, and how to run the code are introduced. We provide two sample input files, *ExtractedStays.txt* and *SampleStayRegion.txt*, so that anyone interested in the model can go through all the steps with the sample data. The code is written in c++ and Matlab. 
 
 
 ##Step1GenerateMoment.cpp
