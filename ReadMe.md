@@ -3,7 +3,7 @@ This document explains how to run the individual spatial temporal mobility model
 
 
 ##Step1GenerateMoment.cpp
-**function**: perform moment calculation for home and other location    <br />
+**function**: perform moment calculation for home and other locations    <br />
 **input file**: SampleStayRegion.txt      <br />
 **output file**: MomentCalculation.txt, MeanSDProd.txt      <br />
 **output format**:       <br />
@@ -35,8 +35,8 @@ Correlation coefficient for the demand and supply: rho    <br />
 
 
 ##Step4GeneratePoints.m
-**function**: generate simulated home and other location using the calibrated parameters from Step 2    <br />
-input: parameters calibrated in Step2FractalAnalysis.m    <br />
+**function**: generate simulated home and other locations using the calibrated parameters from Step 2    <br />
+**input file**: parameters calibrated in Step2FractalAnalysis.m    <br />
 **output file**: SimuPointHome.txt, SimuPointOther.txt    <br />
 **output format**: lat, lon     <br />
 
@@ -53,7 +53,7 @@ g++ -O3 Step5PI.cpp -o Step5PI    <br />
 
 ##Step6RankProbability.cpp
 **function**: calculate the probability to choose each location rank    <br />
-**input file**: ampleStayRegion.txt    <br />
+**input file**: SampleStayRegion.txt    <br />
 **output file**: RankProbability.txt    <br />
 **output format**: an array containing the probability to choose each location rank    <br />
 **how to run**:    <br />
@@ -71,8 +71,8 @@ g++ -O3 Step7Pr.cpp -o Step7Pr    <br />
 
 
 ##Step8SpatialPlots.m
-**function**: plot P(k), P(r), PI,     <br />
-input: results from the three previous steps    <br />
+**function**: plot P(k), P(r), P>(i),     <br />
+**input file**: results from the previous three steps    <br />
 **output file**: None    <br />
 
 
@@ -91,7 +91,7 @@ g++ -O3 Step9CalculateDT.cpp -o Step9CalculateDT    <br />
 
 
 ##Step10PN.m
-**function**: Calculate the daily visit location number from the analytical model    <br />
+**function**: calculate the daily visit location number from the analytical model    <br />
 **input file**: DTParameter.txt PT.txt    <br />
 **output file**: pn.mat, pn_non1, which are the daily number of visited location distribution with and without parameter beta1.    <br />
 
