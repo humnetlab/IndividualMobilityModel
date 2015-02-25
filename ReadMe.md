@@ -3,7 +3,7 @@ This document explains how to run the individual spatial temporal mobility model
 
 
 ##Step1GenerateMoment.cpp
-**function**: do moment calculation for home and other location    <br />
+**function**: perform moment calculation for home and other location    <br />
 **input file**: SampleStayRegion.txt      <br />
 **output file**: MomentCalculation.txt, MeanSDProd.txt      <br />
 **output format**:       <br />
